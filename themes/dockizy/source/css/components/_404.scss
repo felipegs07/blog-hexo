@@ -1,0 +1,30 @@
+.notfound {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    background-color: $yellowcat;
+
+    &__image {
+        margin: 0 auto;
+        width: 300px;
+        padding-top: 2.5rem;
+    }
+
+    &__text {
+        color: $dark-grey;
+        font-size: 2rem;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__button {
+        width: 100%;
+        text-align: center;
+        padding-top: 3rem;
+    }
+}

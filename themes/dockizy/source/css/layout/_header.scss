@@ -1,0 +1,25 @@
+.header {
+    position: relative;
+
+    &__logo {
+        padding: .5rem 1rem;
+        background-color: $yellow;
+        font-size: 2rem;
+        border-top-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        font-weight: bold;
+        color: $black;
+    }
+
+    &__menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: right;
+        font-size: 2.2rem;
+        
+        &-item {
+            display: block;
+        }
+    }
+}

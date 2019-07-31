@@ -1,0 +1,8 @@
+.container {
+    width: 70%;
+    margin: 0 auto;
+
+    @include responsive(phone){
+        width: 100%;
+    }
+}
