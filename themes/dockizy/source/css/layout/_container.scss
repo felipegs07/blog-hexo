@@ -3,6 +3,11 @@
     margin: 0 auto;
 
     @include responsive(phone){
+        width: 90%;
+    }
+
+    &-fluid {
         width: 100%;
     }
 }
+

@@ -1,0 +1,26 @@
+.last-post {
+    padding: 2rem 0;
+    background-color: #000;
+
+    &__title {
+        font-size: 3rem;
+        font-weight: normal;
+        background-color: $yellow;
+        width: fit-content;
+        padding: .3rem .6rem;
+        border-top-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+    }
+
+    &__post {
+        color: $white;
+        font-size: 4rem;
+        margin-top: 10rem;
+        display: inline-block;
+
+        &-date {
+            color: $white;
+            font-size: 1.4rem;
+        }
+    }
+}

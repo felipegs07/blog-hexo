@@ -12,6 +12,20 @@ layout: default
     </section>
 </header>
 
+<section class="last-post container-fluid">
+    <article class="container">
+        <h3 class="last-post__title">Últimos Posts:</h3>
+        {% for post in site.posts.sort('order', 1).toArray() %}
+            {% if loop.first %}
+                <a href="{{ url_for(post.path) }}" class="last-post__post">{{ post.title }}</a>
+                <article class="last-post__info">
+                    <span class="last-post__post-date">{{ date(post.date, 'dddd, MMMM Do YYYY') }}</span>
+                </article>
+            {% endif %}
+        {% endfor %}
+    </article>
+</section>
+
 {% block js %}
     
 {% endblock %}
