@@ -1,15 +1,12 @@
 .last-post {
     padding: 2rem 0;
-    background-color: #000;
+    background-color: $black;
 
     &__title {
         font-size: 3rem;
         font-weight: normal;
-        background-color: $yellow;
-        width: fit-content;
         padding: .3rem .6rem;
-        border-top-left-radius: 1.5rem;
-        border-bottom-right-radius: 1.5rem;
+        margin-top: 3rem;
     }
 
     &__post {

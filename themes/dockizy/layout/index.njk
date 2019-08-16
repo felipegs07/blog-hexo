@@ -2,29 +2,33 @@
 layout: default
 ---
 
-<header class="container header" style="position: relative">
-    <a href="/" class="header__logo">Felipe G.S.</a>
+<header class="container-fluid" style="position: relative">
     <section class="header__menu">
         <a href="/" class="header__menu-item">sobre</a>
         <a href="/" class="header__menu-item">portfólio</a>
         <a href="/" class="header__menu-item">blog</a>
-        <a href="/" class="header__menu-item">creative lab</a>
     </section>
+    <section class="header__brand">
+        <article class="container">
+            <a href="/" class="header__logo">Felipe G.S.</a>
+        </article>
+    </section>
+
 </header>
 
-<section class="last-post container-fluid">
-    <article class="container">
-        <h3 class="last-post__title">Últimos Posts:</h3>
-        {% for post in site.posts.sort('order', 1).toArray() %}
-            {% if loop.first %}
-                <a href="{{ url_for(post.path) }}" class="last-post__post">{{ post.title }}</a>
-                <article class="last-post__info">
-                    <span class="last-post__post-date">{{ date(post.date, 'dddd, MMMM Do YYYY') }}</span>
-                </article>
-            {% endif %}
-        {% endfor %}
-    </article>
+
+<section class="container">
+    <h3 class="last-post__title">Últimos Posts:</h3>
+    {% for post in site.posts.sort('order', 1).toArray() %}
+        {% if loop.first %}
+            <a href="{{ url_for(post.path) }}" class="last-post__post">{{ post.title }}</a>
+            <article class="last-post__info">
+                <span class="last-post__post-date">{{ date(post.date, 'dddd, MMMM Do YYYY') }}</span>
+            </article>
+        {% endif %}
+    {% endfor %}
 </section>
+
 
 {% block js %}
     

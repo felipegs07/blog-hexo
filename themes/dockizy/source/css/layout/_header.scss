@@ -1,7 +1,4 @@
 .header {
-    margin-top: 1rem;
-    position: relative;
-    margin-bottom: 10%;
 
     &__logo {
         padding: .5rem 1rem;
@@ -14,14 +11,22 @@
     }
 
     &__menu {
-        position: absolute;
-        top: 0;
-        right: 0;
-        text-align: right;
-        font-size: 2.2rem;
+        background-color: $white;
+        text-align: center;
+        color: $black;
+        font-size: 1.8rem;
+        padding: .5rem 0;
+        font-weight: 500;
         
         &-item {
-            display: block;
+            display: inline;
+            padding: 0 .6rem;
         }
+    }
+    
+    &__brand {
+        background-color: $white;
+        padding: 3.5rem;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
     }
 }
