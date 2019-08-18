@@ -1,4 +1,7 @@
 .header {
+    position: relative;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+
 
     &__logo {
         padding: .5rem 1rem;
@@ -8,6 +11,7 @@
         border-bottom-right-radius: 1.5rem;
         font-weight: bold;
         color: $black;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
     }
 
     &__menu {
@@ -27,6 +31,5 @@
     &__brand {
         background-color: $white;
         padding: 3.5rem;
-        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
     }
 }

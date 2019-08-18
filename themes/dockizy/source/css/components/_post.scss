@@ -1,0 +1,115 @@
+.post {
+    width: 100%;
+    background-color: $white;
+    padding: 5rem;
+    margin: 3rem 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+
+    &__icon {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+        background-color: $yellow;
+        text-align: center;
+        // border-left: .3rem solid $black;
+        box-shadow: 0px 0px .5rem rgba(0, 0, 0, .2);
+
+        & > i {
+            font-size: 7rem;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $black;
+        }
+    }
+
+    &__content {
+        font-size: 1.6rem;
+
+        p {
+            margin-top: 2rem;
+            line-height: 1.5em;
+        }
+    
+        table {
+            width: 100%;
+            font-size: 1rem;
+    
+            thead tr th{
+                background-color: $grey;
+                text-align: center!important;
+                padding: 0.5rem 0;
+            }
+    
+            tbody tr td {
+                padding: 0.2rem 0;
+            }
+        }
+    
+        a {
+            font-weight: bold;
+            text-decoration: underline;
+            
+            &:hover {
+                text-decoration: none;
+            }
+        } 
+    
+        figure {
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 5px;
+            border: 1px solid $grey;
+            max-width: 100%;
+            overflow: auto;
+        }
+    
+        pre {
+            margin: 1rem 0;
+            padding: 2%;
+            width: 100%;
+            font-size: 1.4rem;
+        }
+    
+    
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    
+        blockquote {
+            border-left: 0.3rem solid $grey;
+            font-size: 1.5em;
+            padding-left: .5rem;
+            font-weight: bold;
+        }
+    
+       ul, ol {
+           padding-left: 2rem;
+       }
+    
+       h1 {
+            font-size: 3.5rem;
+        }
+    
+        h2 {
+            font-size: 2.6rem;
+            margin-top: 2rem;
+        }
+        h3 {
+            font-size: 1.6rem;
+        }
+        h4 {
+            font-size: 1.4rem;
+        }
+        h5 {
+            font-size: 1.2rem;
+        }
+        h6 {
+            font-size: 1rem;
+        }
+    }
+}

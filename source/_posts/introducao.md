@@ -1,7 +1,7 @@
 ---
 title: "Iniciando com Hexo: Instalação"
-order: 1
 date: 2019-08-01 12:00:00
+icon: "fas fa-blog"
 ---
 
 Bem-vindo a documentação do **Dockizy**, um tema feito em Hexo para a construção de documentação de maneira simples, fácil e rápida.  

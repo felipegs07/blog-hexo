@@ -1,7 +1,7 @@
 ---
 title: Escrevendo Capítulos
-order: 3
 date: 2019-07-30 12:00:00
+icon: "fab fa-css3-alt"
 ---
 
 O processo de criação de capítulos na documentação é simples. É necessário abrir o terminal no diretório do tema e executar:

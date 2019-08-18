@@ -24,7 +24,10 @@ body {
  Ubuntu,
  Cantarell,
  'Helvetica Neue',
- sans-serif; }
+ sans-serif;
+ background-color: #F3F5F7;
+
+}
 
 ::-webkit-scrollbar {
   width: .5rem;
@@ -47,7 +50,6 @@ a {
   text-decoration: none;
 
   &:hover {
-   text-decoration:line-through;
    background-color: $yellow;
    color: $black;
   }
