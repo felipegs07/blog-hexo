@@ -1,10 +1,11 @@
 # Site
-title: Dockizy
+title: Felipe G.S.
 description: >-
   Dockizy é um tema simples, fácil e rápido para criar documentações.<br><a href="https://github.com/felipegs07/dockizy" target="_blank" rel="noopener">Conheça</a>
 img: "/img/dockizy.png" # logo of the documentation
 background_color: "#0D83CD" # color of background on hover
 text_color: "#fff" #color of the text on hover
+job: Desenvolvedor Front-end
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

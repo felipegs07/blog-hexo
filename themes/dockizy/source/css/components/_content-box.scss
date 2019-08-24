@@ -1,9 +1,34 @@
-.post {
+.content-box {
     width: 100%;
     background-color: $white;
     padding: 5rem;
     margin: 3rem 0;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+
+    &__thumb {
+        height: 95%;
+        width: 95%;
+        border-radius: 50%;
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    &__tag {
+        color: $black;
+        background-color: $yellow;
+        padding: .3rem .6rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        font-weight: bold;
+        font-size: 1.4rem;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        margin: .3rem 0;
+    }
 
     &__icon {
         width: 15rem;
@@ -15,6 +40,7 @@
         text-align: center;
         // border-left: .3rem solid $black;
         box-shadow: 0px 0px .5rem rgba(0, 0, 0, .2);
+        position: relative;
 
         & > i {
             font-size: 7rem;
@@ -29,7 +55,7 @@
         font-size: 1.6rem;
 
         p {
-            margin-top: 2rem;
+            margin: 1rem 0;
             line-height: 1.5em;
         }
     
@@ -92,24 +118,28 @@
        }
     
        h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
         }
     
         h2 {
-            font-size: 2.6rem;
-            margin-top: 2rem;
+            font-size: 3.2rem;
+            margin-bottom: .8rem;
         }
         h3 {
-            font-size: 1.6rem;
+            font-size: 2.8rem;
+            margin-bottom: .8rem;
         }
         h4 {
-            font-size: 1.4rem;
+            font-size: 2.4rem;
+            margin-bottom: .8rem;
         }
         h5 {
-            font-size: 1.2rem;
+            font-size: 2rem;
+            margin-bottom: .8rem;
         }
         h6 {
-            font-size: 1rem;
+            font-size: 1.6rem;
+            margin-bottom: .8rem;
         }
     }
 }
