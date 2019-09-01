@@ -5,6 +5,10 @@
     margin: 3rem 0;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
 
+    @include responsive(tab-port) {
+        padding: 1.5rem;
+    }
+
     &__thumb {
         height: 95%;
         width: 95%;
@@ -19,7 +23,7 @@
 
     &__tag {
         color: $black;
-        background-color: $yellow;
+        background-color: $primary-color;
         padding: .3rem .6rem;
         border-top-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
@@ -36,7 +40,7 @@
         border-radius: 50%;
         display: block;
         margin: 0 auto;
-        background-color: $yellow;
+        background-color: $primary-color;
         text-align: center;
         // border-left: .3rem solid $black;
         box-shadow: 0px 0px .5rem rgba(0, 0, 0, .2);

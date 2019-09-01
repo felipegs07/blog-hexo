@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Um blog de Felipe G.S, focado no compartilhamento de conteúdo de desenvolvimento web e front-end. Posts sobre CSS, React, TDD, Hexo e muito mais…" >
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <title>{{ page.title }} | {{ theme.title }} - {{ theme.job }}</title>
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+    <title>
+        {% if page.title %}
+            {{ page.title }} | {{ theme.title }} - {{ theme.job }}
+        {% else %}
+            {{ theme.title }} - {{ theme.job }}
+        {% endif %}
+    </title>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+    </script>
 </head>
 <body>
     <header class="container-full header">
@@ -24,6 +42,10 @@
     </header>
     
     {{ body }}
+
+    <footer style="text-align: center; font-size: 14px; padding-top: 3rem; width: 100%; padding-bottom: 10px">
+        Feito com <i class="fas fa-heart" style="color: #C4170C"></i> e <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo.io</a>
+    </footer>
 
     {% block js %}{% endblock %}
 </body>

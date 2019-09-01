@@ -1,12 +1,13 @@
 ---
 layout: default
+title: teste
 ---
 
 <section class="container">
     <h3 class="title__page"><strong>Início</strong> | Últimas publicações</h3>
     {% for post in site.posts.sort('date', -1).toArray() %}
         {% if loop.first %}
-            <a href="{{ url_for(post.path) }}">
+            <a href="{{ url_for(post.path) }}" aria-label="{{ post.title }}">
                 <article class="card card--full">
                     <section class="card__thumb">
                         <i class="{{ post.icon }}"></i>
@@ -18,7 +19,7 @@ layout: default
                 </article>
             </a>
         {% elif loop.index < 4 %}
-            <a class="card__link" href="{{ url_for(post.path) }}">
+            <a class="card__link" href="{{ url_for(post.path) }}" aria-label="{{ post.title }}">
                 <article class="card">
                     <section class="card__thumb">
                         <i class="{{ post.icon }}"></i>
