@@ -2,6 +2,15 @@
     position: relative;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 
+    &__social {
+        font-size: 1.8rem;
+        float: right;
+
+        &-item {
+            margin: 0 .2rem
+        }
+    }
+
 
     &__logo {
         padding: .5rem 1rem;

@@ -8,13 +8,13 @@ Quando a utilização de CSS deixa de ser apenas a estilização de sites pessoa
 
 Para corrigir problemas como esses, foram criados arquiteturas de organização e metodologias e uma das mais populares é o BEMCSS.
 #### Sumário:
-[O que é?](#o-que-é)  
-[Block](#block)  
-[Element](#element)  
-[Modifier](#modifier)  
-[Uma nova forma de pensar CSS](#uma-nova-forma-de-pensar-css)  
-[Conclusão](#conclusão)  
-[Fontes](#fontes) 
+[O que é?](#O-que-é)  
+[Block](#Block)  
+[Element](#Element)  
+[Modifier](#Modifier)  
+[Uma nova forma de pensar CSS](#Uma-nova-forma-de-pensar-CSS)  
+[Conclusão](#Conclusao)  
+[Fontes](#Fontes) 
 
 ## O que é?
 
@@ -65,4 +65,4 @@ Separando o layout dessa forma, a própria criação do código se torna mais or
 A metodologia é simples, porém muito funcional e útil no dia a dia de desenvolvimento, além de ser algo bastante pedido em vagas de emprego no mercado atual. Criar um CSS escalável e de qualidade evita retrabalho e aumenta a qualidade de um software, por isso, é uma habilidade cada vez mais requisitada em projetos de alto nível.  
 
 ### Fontes: 
- - [getbem](http://getbem.com/){:target="_blank"}{:rel="noopener"}
+ - [getbem](http://getbem.com/)
