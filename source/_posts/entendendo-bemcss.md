@@ -21,6 +21,10 @@ Para corrigir problemas como esses, foram criados arquiteturas de organização 
 A sigla vem de Block-Element-Modifier, que é a forma designada para criar nomes para as classes. A idéia é criar um padrão rígido para a nomeação das classes, fazendo com que fique fácil de ler e entender o que a classe faz e a qual componente ela se dirige.
 Os nomes das classes seguem a linha:
 
+```css
+.bloco__elemento--modificador {}
+```
+
 
 Sendo 2 underlines que  separam o bloco do elemento e dois traços que separam o elemento do modificador.
 
@@ -43,15 +47,33 @@ A nomeação desses elementos seria:
 ## Modifier:
 O modificador normalmente se aplica a alterações e formas variadas pros elementos ou pro próprio bloco como um todo. No exemplo do artigo, quando o usuário colocasse algo que não corresponde a senha ou e-mail nos inputs e houvesse uma verificação para confirmar isso, o feedback visual do erro, por exemplo, poderia ser feito mudando as cores das bordas dos inputs incorretos para vermelho.  
 
-A classe modificadora seria utilizada para criar isso, sendo usada dessa forma: 
+A classe modificadora seria utilizada para criar isso, sendo usada dessa forma:
+
+```css
+.login__email--error {}
+```
+
 
 Os modificadores podem ser usados também para o bloco como um todo, podendo ser aplicado diretamente sobre ele na classe, ignorando a existência dos elementos. Por exemplo:
 
-
+```css
+.login--error {}
+```
 
 Lembrando que cada elemento tem sua classe de maneira isolada. Por exemplo, se um elemento tem outro elemento dentro dele, não é correto unir os elementos numa única classe, como:
 
+```css
+.bloco__elemento1__elemento2__elemento3 {}
+```
+
 Nesses casos cada elemento tem sua classe própria, ignorando a ordem da estrutura HTML
+
+```css
+.bloco {}
+.bloco__elemento1 {}
+.bloco__elemento2 {}
+.bloco__elemento3 {}
+```
 
 ## Uma nova forma de pensar CSS:
 

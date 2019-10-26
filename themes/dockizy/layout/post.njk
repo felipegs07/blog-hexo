@@ -2,11 +2,13 @@
 layout: default
 ---
 
+<section class="content-header">
+    <article class="content-header__icon">
+        <i class="{{ page.icon }}"></i>
+    </article>
+</section>
 <section class="container">
     <article class="content-box">
-        <section class="content-box__icon">
-            <i class="{{ page.icon }}"></i>
-        </section>
         <section class="content-box__content">
             <h1>{{ page.title }}</h1>
             <i>publicado em {{ date(post.date, 'll') }} | {{ min2read(page.content) }} minutos de leitura</i>
