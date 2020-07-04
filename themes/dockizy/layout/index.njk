@@ -3,39 +3,58 @@ layout: default
 title: teste
 ---
 
+<section class="main-block">
+    <section class="main__content">
+        <section class="container main__border">
+            Eu sou <strong>Felipe G.S</strong>, um desenvolvedor <strong>Front-end</strong> em desenvolvimento. Apaixonado por criar <span>experiências</span> positivas e tornar a vida das pessoas mais <span>simples</span>.
+            <br />
+            <strong>
+                <a class="link" href="https://www.linkedin.com/in/felipegdasilva/" rel="noopener noreferrer" target="_blank">
+                    me conheça.
+                </a>
+            </strong>
+        </section>
+    </section>
+</section>
+
 <section class="container">
     <h3 class="title__page"><strong>Início</strong> | Últimas publicações</h3>
     {% for post in site.posts.sort('date', -1).toArray() %}
         {% if loop.first %}
-            <a href="{{ url_for(post.path) }}" aria-label="{{ post.title }}">
-                <article class="card card--full">
-                    <section class="card__thumb">
-                        <i class="{{ post.icon }}"></i>
-                    </section>
-                    <section class="card__info">
-                        <h3 class="card__post-title">{{ post.title }}</h3>
-                        <span class="card__post-date">postado em {{ date(post.date, 'll') }}</span>
-                    </section>
-                </article>
-            </a>
+            <article class="card card--full">
+                {# <section class="card__thumb">
+                    <i class="{{ post.icon }}"></i>
+                </section> #}
+                <section class="card__info">
+                    <h3 class="card__post-title">{{ post.title }}</h3>
+                    <span class="card__post-info">
+                        postado em {{ date(post.date, 'll') }} | 
+                        {{ min2read(post.content) }} minutos de leitura
+                        <a href="{{ url_for(post.path) }}" class="link" aria-label="{{ post.title }}">ler post</a>
+                    </span>
+                </section>
+            </article>
+
         {% elif loop.index < 4 %}
-            <a class="card__link" href="{{ url_for(post.path) }}" aria-label="{{ post.title }}">
-                <article class="card">
-                    <section class="card__thumb">
-                        <i class="{{ post.icon }}"></i>
-                    </section>
-                    <section class="card__info">
-                        <h3 class="card__post-title">{{ post.title }}</h3>
-                        <span class="card__post-date">postado em {{ date(post.date, 'll') }}</span>
-                    </section>
-                </article>
-            </a>
+            <article class="card">
+                {# <section class="card__thumb">
+                    <i class="{{ post.icon }}"></i>
+                </section> #}
+                <section class="card__info">
+                    <h3 class="card__post-title">{{ post.title }}</h3>
+                    <span class="card__post-info">
+                        postado em {{ date(post.date, 'll') }} | 
+                        {{ min2read(post.content) }} minutos de leitura
+                        <a href="{{ url_for(post.path) }}" class="link" aria-label="{{ post.title }}">ler post</a>
+                    </span>
+                </section>
+            </article>
         {% endif %}
     {% endfor %}
 </section>
 
 <section style="text-align: center; margin-top: 3rem;">
-    <a href="/blog" class="btn">ver todos os posts <i class="fas fa-angle-double-right"></i></a>
+    <a href="/blog" class="btn">ver todos os posts</a>
 </section>
 
 

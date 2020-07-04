@@ -27,35 +27,60 @@
     </script>
 </head>
 <body>
-    <header class="container-full header">
-        <section class="header__menu">
-            <a rel="noopener noreferrer" href="/about" class="header__menu-item">sobre</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/felipegs07" class="header__menu-item">portfólio</a>
-            <a rel="noopener noreferrer" href="/blog" class="header__menu-item">blog</a>
-        </section>
-        <section class="header__brand">
-            <article class="container">
-                <a href="/" class="header__logo">Felipe G.S.</a>
-                <section class="header__social">
-                    <a class="header__social-item" aria-label="linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/felipegdasilva/">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="header__social-item" aria-label="github" target="_blank" rel="noopener noreferrer" href="https://github.com/felipegs07">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a class="header__social-item" aria-label="email" target="_blank" rel="noopener noreferrer" href="mailto:felipegdas07@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </section>
-            </article>
-        </section>
-
+    {# <header class="container-full header">
+      <section class="header__menu">
+          <a rel="noopener noreferrer" href="/about" class="header__menu-item">sobre</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/felipegs07" class="header__menu-item">portfólio</a>
+          <a rel="noopener noreferrer" href="/blog" class="header__menu-item">blog</a>
+      </section>
+      <section class="header__brand">
+          <article class="container">
+              <a href="/" class="header__logo">Felipe G.S.</a>
+              <section class="header__social">
+                  <a class="header__social-item" aria-label="linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/felipegdasilva/">
+                      <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a class="header__social-item" aria-label="github" target="_blank" rel="noopener noreferrer" href="https://github.com/felipegs07">
+                      <i class="fab fa-github"></i>
+                  </a>
+                  <a class="header__social-item" aria-label="email" target="_blank" rel="noopener noreferrer" href="mailto:felipegdas07@gmail.com">
+                      <i class="fas fa-envelope"></i>
+                  </a>
+              </section>
+          </article>
+      </section>
+    </header> #}
+    <header class="menu">
+      <section class="container">
+          <a class="menu__logo" href="/">
+            <img src="/img/photo.jpg" alt="Foto do Felipe, um garoto barbudo num fundo de tecido escuro." />
+          </a>
+          <nav class="menu__nav">
+            <a href="/" class="menu__nav-item menu__nav-item-green">Felipe G.S.</a>
+            <a class="menu__nav-item" href="/about" rel="noopener noreferrer" target="_blank">sobre</a>
+            <a class="menu__nav-item" href="/blog" rel="noopener noreferrer" target="_blank">blog</a>
+            <a class="menu__nav-item" href="https://github.com/felipegs07" rel="noopener noreferrer" target="_blank">portfólio</a>
+          </nav>
+      </section>
     </header>
-    
     {{ body }}
 
     <footer style="text-align: center; font-size: 14px; padding-top: 3rem; width: 100%; padding-bottom: 10px">
-        Feito com <i class="fas fa-heart" style="color: #C4170C"></i> e <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo.io</a>
+        <section class="header__social">
+            <a class="header__social-item" aria-label="linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/felipegdasilva/">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="header__social-item" aria-label="github" target="_blank" rel="noopener noreferrer" href="https://github.com/felipegs07">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="header__social-item" aria-label="email" target="_blank" rel="noopener noreferrer" href="mailto:felipegdas07@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </section>
+
+         <section style="margin-top: 1rem;">
+            Feito com <i class="fas fa-heart" style="color: #C4170C"></i> e <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo.io</a>
+         </section>
     </footer>
 
     {% block js %}{% endblock %}

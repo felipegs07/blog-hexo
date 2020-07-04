@@ -1,0 +1,12 @@
+.link {
+    color: $dark-green;
+    font-weight: bold;
+    border: .2rem solid $light-green;
+    border-radius: .2rem;
+    padding: .3rem;
+
+    @include responsive(phone){
+        margin-top: .5rem;
+        display: inline-block;
+    }
+}

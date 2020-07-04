@@ -2,6 +2,10 @@
 title: "Entendendo BEMCSS"
 date: 2019-07-25 12:00:00
 icon: "fab fa-css3-alt"
+tags:
+- CSS3
+- Begginer
+- Architecture
 ---
 
 Quando a utilização de CSS deixa de ser apenas a estilização de sites pessoais ou projetos pequenos e passa para projetos grandes, escaláveis e complexos, cria-se a necessidade de organizar e pensar sobre a arquitetura para o CSS. Coisas simples como a nomeação das classes pode se tornar um gigantesco problema na manutenção futura.
