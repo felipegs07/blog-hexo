@@ -52,15 +52,17 @@
     </header> #}
     <header class="menu">
       <section class="container">
-          <a class="menu__logo" href="/">
-            <img src="/img/photo.jpg" alt="Foto do Felipe, um garoto barbudo num fundo de tecido escuro." />
-          </a>
-          <nav class="menu__nav">
-            <a href="/" class="menu__nav-item menu__nav-item-green">Felipe G.S.</a>
+        <section class="menu_logo">
+             <a href="/">
+                <img class="menu__logo-img" src="/img/photo.jpg" alt="Foto do Felipe, um garoto barbudo num fundo de tecido escuro." />
+                <span href="/" class="menu__logo-text">Felipe G.S.</span>
+            </a>
+        </section>
+        <nav class="menu__nav">
             <a class="menu__nav-item" href="/about" rel="noopener noreferrer" target="_blank">sobre</a>
             <a class="menu__nav-item" href="/blog" rel="noopener noreferrer" target="_blank">blog</a>
             <a class="menu__nav-item" href="https://github.com/felipegs07" rel="noopener noreferrer" target="_blank">portfólio</a>
-          </nav>
+        </nav>
       </section>
     </header>
     {{ body }}

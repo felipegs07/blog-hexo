@@ -1,53 +1,12 @@
-.header {
-    position: relative;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-
-    &__social {
-        font-size: 1.8rem;
-
-        &-item {
-            margin: 0 .2rem
-        }
-    }
-
-
-    &__logo {
-        padding: .5rem 1rem;
-        background-color: $primary-color;
-        font-size: 2rem;
-        border-top-left-radius: 1.5rem;
-        border-bottom-right-radius: 1.5rem;
-        font-weight: bold;
-        color: $black;
-        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-    }
-
-    &__menu {
-        background-color: $white;
-        text-align: center;
-        color: $black;
-        font-size: 1.8rem;
-        padding: .5rem 0;
-        font-weight: 500;
-        
-        &-item {
-            display: inline;
-            padding: 0 .6rem;
-        }
-    }
-    
-    &__brand {
-        background-color: $white;
-        padding: 3.5rem;
-    }
-}
-
 .menu {
     width: 100vw;
     padding-top: 2rem;
     padding-bottom: 1rem;
-    position: relative;
-    box-shadow: 0.2rem 0.2rem 0.5rem $shadow-light;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: $white;
+    z-index: 1000;
 
     &__logo {
         display: inline-block;
@@ -55,17 +14,23 @@
         position: absolute;
         bottom: 0;
 
-        & > img {
+        &-img {
             border-radius: 50%;
             height: 100%;
             border: .3rem solid rgba(0, 0, 0, .1);
+        }
+        &-text {
+            font-size: 2rem;
+            padding: 0 .8rem;
+            font-weight: 500;
+            text-decoration: none;
         }
     }
 
     &__nav {
         display: inline-block;
         padding: .8rem;
-        margin-left: 5%;
+        //margin-left: 5%;
 
         @include responsive(lg){
             margin-left: 5%;
@@ -76,14 +41,10 @@
         }
 
         &-item {
-            font-size: 1.8rem;
+            font-size: 2rem;
             padding: 0 .8rem;
             font-weight: 500;
             text-decoration: none;
-
-            &-green {
-                color: $dark-green;
-            }
         }
     }
     

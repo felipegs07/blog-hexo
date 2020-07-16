@@ -4,7 +4,7 @@
     display: inline-block;
     border-radius: .5rem;
     box-shadow: 0rem .4rem .5rem rgba(0, 0, 0, 0.2);
-    border-left: .4rem solid $dark-green;
+    border-left: .4rem solid $black;
     margin: .8%;
     background-color: $white;
     overflow: hidden;
@@ -39,7 +39,7 @@
         border-bottom-left-radius: .3rem;
         text-align: center;
         vertical-align: middle;
-        background-color: $light-green;
+        background-color: $white;
         box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
 
         & > i {

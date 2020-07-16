@@ -4,17 +4,19 @@ title: teste
 ---
 
 <section class="main-block">
-    <section class="main__content">
-        <section class="container main__border">
-            Eu sou <strong>Felipe G.S</strong>, um desenvolvedor <strong>Front-end</strong> em desenvolvimento. Apaixonado por criar <span>experiências</span> positivas e tornar a vida das pessoas mais <span>simples</span>.
-            <br />
-            <strong>
-                <a class="link" href="https://www.linkedin.com/in/felipegdasilva/" rel="noopener noreferrer" target="_blank">
-                    me conheça.
-                </a>
-            </strong>
+    <div id="particles-js">
+        <section class="main__content">
+            <section class="container main__border">
+                Eu sou <strong>Felipe G.S</strong>, um desenvolvedor <strong>Front-end</strong> em desenvolvimento. Apaixonado por criar <span>experiências</span> positivas e tornar a vida das pessoas mais <span>simples</span>.
+                <br />
+                <strong>
+                    <a class="link" href="https://www.linkedin.com/in/felipegdasilva/" rel="noopener noreferrer" target="_blank">
+                        me conheça.
+                    </a>
+                </strong>
+            </section>
         </section>
-    </section>
+    </div>
 </section>
 
 <section class="container">
@@ -56,6 +58,14 @@ title: teste
 <section style="text-align: center; margin-top: 3rem;">
     <a href="/blog" class="btn">ver todos os posts</a>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<script>
+    particlesJS.load('particles-js', 'particlesjs.json', function() {
+        //console.log('particles.js config loaded');
+    });
+</script>
 
 
 {% block js %}
