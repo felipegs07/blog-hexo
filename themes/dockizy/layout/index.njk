@@ -22,41 +22,26 @@ title: teste
 <section class="container">
     <h3 class="title__page"><strong>Início</strong> | Últimas publicações</h3>
     {% for post in site.posts.sort('date', -1).toArray() %}
-        {% if loop.first %}
-            <article class="card card--full">
-                {# <section class="card__thumb">
-                    <i class="{{ post.icon }}"></i>
-                </section> #}
-                <section class="card__info">
-                    <h3 class="card__post-title">{{ post.title }}</h3>
-                    <span class="card__post-info">
-                        postado em {{ date(post.date, 'll') }} | 
-                        {{ min2read(post.content) }} minutos de leitura
-                        <a href="{{ url_for(post.path) }}" class="link" aria-label="{{ post.title }}">ler post</a>
-                    </span>
-                </section>
-            </article>
-
-        {% elif loop.index < 4 %}
-            <article class="card">
-                {# <section class="card__thumb">
-                    <i class="{{ post.icon }}"></i>
-                </section> #}
-                <section class="card__info">
-                    <h3 class="card__post-title">{{ post.title }}</h3>
-                    <span class="card__post-info">
-                        postado em {{ date(post.date, 'll') }} | 
-                        {{ min2read(post.content) }} minutos de leitura
-                        <a href="{{ url_for(post.path) }}" class="link" aria-label="{{ post.title }}">ler post</a>
-                    </span>
-                </section>
-            </article>
+        {% if loop.index < 4 %}
+            <a href="{{ url_for(post.path) }}" aria-label="{{ post.title }}">
+                <article class="card card--full">
+                    <section class="card__info">
+                        <h3 class="card__post-title">
+                            Dolor eiusmod occaecat amet fugiat adipisicing aute mollit aliquip qui ex ad occaecat.Adipisicing dolore anim nulla ut.Ipsum aliquip nulla officia occaecat. Duis officia et excepteur aliqua. Adipisicing est do commodo occaecat dolor.Elit dolore nulla dolor veniam ad ullamco incididunt in adipisicing esse nulla officia ullamco.
+                        </h3>
+                        <span class="card__post-info">
+                            postado em {{ date(post.date, 'll') }} | 
+                            {{ min2read(post.content) }} minutos de leitura
+                        </span>
+                    </section>
+                </article>
+            </a>
         {% endif %}
     {% endfor %}
 </section>
 
 <section style="text-align: center; margin-top: 3rem;">
-    <a href="/blog" class="btn">ver todos os posts</a>
+    <a href="/blog" class="btn btn--outlined">ver todos os posts</a>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>

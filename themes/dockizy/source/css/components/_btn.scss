@@ -8,10 +8,10 @@
         transition: all .2s;
         position: relative;
         font-size: 1.6rem;
-        background-color: $white;
-        color: $black;
+        background-color: $black;
+        color: $white;
         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-        border-left: .3rem solid $black;
+        border-left: .3rem solid $dark-grey;
     }
 
     &:hover {
@@ -27,4 +27,14 @@
         box-shadow: 0 .5rem 1rem rgba($color:$black, $alpha: 0.2);
     }
 
+    &--outlined {
+        &,
+        &:link,
+        &:visited {
+            border: .1rem solid $black;
+            border-left: .3rem solid $black;
+            background-color: $white;
+            color: $black;
+        }
+    }
 }
