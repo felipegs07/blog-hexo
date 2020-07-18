@@ -1,58 +1,38 @@
----
-layout: default
-title: teste
----
+{% extends "default.njk" %}
 
-<section class="main-block">
-    <div id="particles-js">
-        <section class="main__content">
-            <section class="container main__border">
-                Eu sou <strong>Felipe G.S</strong>, um desenvolvedor <strong>Front-end</strong> em desenvolvimento. Apaixonado por criar <span>experiências</span> positivas e tornar a vida das pessoas mais <span>simples</span>.
-                <br />
-                <strong>
-                    <a class="link" href="https://www.linkedin.com/in/felipegdasilva/" rel="noopener noreferrer" target="_blank">
-                        me conheça.
-                    </a>
-                </strong>
-            </section>
-        </section>
-    </div>
-</section>
+{% block maincontent %}
+    Eu sou <strong>Felipe G.S</strong>, um desenvolvedor <strong>Front-end</strong> em desenvolvimento. Apaixonado por criar <span>experiências</span> positivas e tornar a vida das pessoas mais <span>simples</span>.
+    <br />
+    <strong>
+        <a class="link" href="https://www.linkedin.com/in/felipegdasilva/" rel="noopener noreferrer" target="_blank">
+            me conheça.
+        </a>
+    </strong>
+{% endblock %}
 
-<section class="container">
-    <h3 class="title__page"><strong>Início</strong> | Últimas publicações</h3>
-    {% for post in site.posts.sort('date', -1).toArray() %}
-        {% if loop.index < 4 %}
-            <a href="{{ url_for(post.path) }}" aria-label="{{ post.title }}">
-                <article class="card card--full">
-                    <section class="card__info">
-                        <h3 class="card__post-title">
-                            Dolor eiusmod occaecat amet fugiat adipisicing aute mollit aliquip qui ex ad occaecat.Adipisicing dolore anim nulla ut.Ipsum aliquip nulla officia occaecat. Duis officia et excepteur aliqua. Adipisicing est do commodo occaecat dolor.Elit dolore nulla dolor veniam ad ullamco incididunt in adipisicing esse nulla officia ullamco.
-                        </h3>
-                        <span class="card__post-info">
-                            postado em {{ date(post.date, 'll') }} | 
-                            {{ min2read(post.content) }} minutos de leitura
-                        </span>
-                    </section>
-                </article>
-            </a>
-        {% endif %}
-    {% endfor %}
-</section>
+{% block mainbody %}
+    <section class="container">
+        <h3 class="title__page"><strong>Início</strong> | Últimas publicações</h3>
+        {% for post in site.posts.sort('date', -1).toArray() %}
+            {% if loop.index < 4 %}
+                <a href="{{ url_for(post.path) }}" aria-label="{{ post.title }}">
+                    <article class="card card--full">
+                        <section class="card__info">
+                            <h3 class="card__post-title">
+                                {{ post.title }}
+                            </h3>
+                            <span class="card__post-info">
+                                postado em {{ date(post.date, 'll') }} | 
+                                {{ min2read(post.content) }} minutos de leitura
+                            </span>
+                        </section>
+                    </article>
+                </a>
+            {% endif %}
+        {% endfor %}
+    </section>
 
-<section style="text-align: center; margin-top: 3rem;">
-    <a href="/blog" class="btn btn--outlined">ver todos os posts</a>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-<script>
-    particlesJS.load('particles-js', 'particlesjs.json', function() {
-        //console.log('particles.js config loaded');
-    });
-</script>
-
-
-{% block js %}
-    
+    <section style="text-align: center; margin-top: 3rem;">
+        <a href="/blog" class="btn">ver todos os posts</a>
+    </section>
 {% endblock %}
