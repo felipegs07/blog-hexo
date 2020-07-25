@@ -1,6 +1,6 @@
 .content-box {
     width: 100%;
-    background-color: $white;
+    background-color: inherit;
     padding: 5rem;
     margin: 3rem 0;
     //margin-top: -20rem;
@@ -12,7 +12,7 @@
     }
 
     &__tag {
-        color: $black;
+        color: inherit;
         // background-color: $primary-color;
         padding: .3rem .6rem;
         // border-top-left-radius: 1rem;

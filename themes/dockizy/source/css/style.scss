@@ -1,4 +1,4 @@
-@import "vendors/highlight";
+// @import "vendors/highlight";
 @import "base/variables";
 @import "base/query-manager";
 @import "base/reset";
@@ -8,6 +8,7 @@
 @import "components/btn";
 @import "components/main";
 @import "components/link";
+@import "layout/footer";
 @import "layout/header";
 @import "layout/titles";
 @import "components/card";

@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    background-color: $white;
+    background-color: inherit;
     z-index: 1000;
     
     &__logo {
@@ -54,7 +54,34 @@
             padding: 0 .8rem;
             font-weight: 500;
             text-decoration: none;
+
+            @include responsive(small-phone){
+                font-size: 1.6rem;
+            }
         }
     }
-    
+
+    &__dark-mode-btn {
+        background-color: inherit;
+        color: inherit;
+        font-family: 'ttcommons-regular', sans-serif;
+        padding: .4rem .8rem 0;
+        border: solid .1rem $black;
+        border-radius: .5rem;
+        font-size: 2rem;
+
+        @include responsive(small-phone){
+            font-size: 1.6rem;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &--dark-mode {
+            background-color: $light-yellow;
+            color: $black;
+            box-shadow: 0 0 1rem .5rem rgba($light-yellow, .2);
+        }
+    }
 }

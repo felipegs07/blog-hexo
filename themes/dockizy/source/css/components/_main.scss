@@ -7,7 +7,11 @@
 		position: relative;
 		display: flex;
 		align-items: center;
-		justify-content: center;
+    justify-content: center;
+    
+    &--dark-mode {
+      border-color: $dark-mode;
+    }
   }
 
   &__content {

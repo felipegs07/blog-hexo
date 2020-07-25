@@ -14,20 +14,28 @@
 @font-face {
   font-family: 'ttcommons-regular';
   src: url(../../fonts/ttcommons-regular.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'ttcommons-bold';
   src: url(../../fonts/ttcommons-bold.ttf);
+  font-display: swap;
 }
 
 html {
   font-size: 62.5%;
-  color: $black;
 }
 
-body {
+.body {
   font-family: 'ttcommons-regular', sans-serif;
+  color: $black;
+  background-color: $white;
+
+  &--dark-mode {
+    color: $white;
+    background-color: $dark-mode;
+  }
 }
 
 ::-webkit-scrollbar {

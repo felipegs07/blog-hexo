@@ -3,13 +3,8 @@
     display: block;
     border-bottom: .1rem solid $black;
     margin: .8%;
-    background-color: $white;
+    background-color: inherit;
     overflow: hidden;
-    transition: color .3s;
-
-    &:hover {
-        color: $dark-grey;
-    }
 
     @include responsive(tab-port) {
         width: 100%;
@@ -52,6 +47,6 @@
         bottom: 1rem;
         display: inline-block;
         font-size: 1.6rem;
-        color: $black;
+        color: inherit;
     }
 }
