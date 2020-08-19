@@ -46,13 +46,11 @@
     </header>
 
     <section class="main-block">
-        <div id="particles-js">
-            <section class="main__content">
-                <section class="container main__border">
-                   {% block maincontent %}{% endblock %}
-                </section>
+        <section class="main__content">
+            <section class="container main__border">
+                {% block maincontent %}{% endblock %}
             </section>
-        </div>
+        </section>
     </section>
 
     {% block mainbody %}{% endblock %}
@@ -75,11 +73,6 @@
          </section>
     </footer>
 
-    <script src="/js/particles.js"></script>
-    <script>
-        particlesJS.load('particles-js', '/particlesjs.json', function() {});
-    </script>
     <script src="/js/main.js"></script>
-    {% block js %}{% endblock %}
 </body>
 </html>
