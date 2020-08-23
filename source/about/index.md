@@ -1,27 +1,28 @@
 ---
 layout: about
-title: Sobre
+title: About
 ---
 
-Eu sou um desenvolvedor front-end focado em me desenvolver na criação de softwares web de alta qualidade e sites.
-Trabalhei com softwares voltados ao ecommerce, utilizando tecnologias front-end como HTML5, CSS3 e SASS, JavaScript, React.js, Bootstrap/Materialize e ferramentas como Gulp.js, Git/GitHub e Firebase.
+I am a front-end developer focused on developing myself in creating web softwares of high quality and websites.
 
-Além de trabalhar com criações de Interfaces Responsivas com foco em reproduzir com fidelidade o design (pixel perfect) e utilizar conceitos de UX para otimizar a performance do ecommerce, quebrando frustrações, diminuindo a taxa de abandono e posteriormente aumentando a conversão dos clientes.
+I worked with ecommerce softwares, using front-end technologies like HTML5, CSS3 and SASS, JavaScript, React.js, Bootstrap/Materialize and tools like Gulp.js, Git/GitHub and Firebase.
 
-Me interesso por trabalhar com desenvolvimento de software e por construir soluções que trazem experiências positivas e facilitem a vida das pessoas.
+Besides working with the creation of responsive interfaces focused on faithful reproduction of design (Pixel Perfect), and to use UX concepts to optimize the ecommerce performance, breaking frustrations, decreasing the dropout rate and then increasing the conversion rate.
+
+I have interest for working with software development and for build solutions that bring positive experiences and make the life easier for everyone.
 
 - [**Linkedin**](https://www.linkedin.com/in/felipegdasilva/)
 - [**Email**](mailto:felipegdas07@gmail.com)
-- [**Blog em Inglês**](https://dev.to/felipegs)
+- [**DEV.to**](https://dev.to/felipegs)
 
-## Habilidades Técnicas:
+## Skills:
 
-- **Base:** HTML5, CSS3, JavaScript ES6+++.
+- **Fundamentals:** HTML5, CSS3, JavaScript ES6+++.
 - **CSS Related:** SASS/SCSS, Styled Components, Bootstrap, Materialize.
-- **Libs JavaScript:** React, Redux, Next.js, Single-SPA (Microfront-end Framework).
-- **Testes Unitários/Integração:** Jest, Enzyme, Mocha, Chai.js.
-- **Templates Engines:** Nunjucks, Liquid, Markdown.
-- **Práticas de Desenvolvimento:** UI Design, Responsive Design, Scrum.
-- **Ferramentas:** Webpack, Gulp.js, npm, git, GitHub.
-- **Geradores de Site Estático:** Jekyll, Hexo, Gatsby.
-- **Outros:** OpenCart, Firebase.
+- **JavaScript Related:** React, Redux, Next.js, Single-SPA (Microfront-end Framework).
+- **Unit testing/Integratio testing:** Jest, Enzyme, Mocha, Chai.js.
+- **Template Engines:** Nunjucks, Liquid, Markdown.
+- **Methodologies:** UI Design, Responsive Design, Scrum.
+- **Tools:** Webpack, Gulp.js, npm, git, GitHub.
+- **Static Site Generator:** Jekyll, Hexo, Gatsby.
+- **Others:** OpenCart, Firebase.

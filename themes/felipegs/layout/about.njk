@@ -1,7 +1,7 @@
 {% extends "default.njk" %}
 
 {% block maincontent %}
-    <section>SOBRE.</section>
+    <section>{{__('about.text')}}.</section>
 {% endblock %}
 
 {% block mainbody %}
@@ -14,7 +14,7 @@
             </section>
             <section class="content-box__content">
                 <h1>{{ theme.title }}</h1>
-                <h5>{{ theme.job }}</h5>
+                <h5>{{__('info.job')}}</h5>
                     {{ page.content }}
             </section>
         </article>

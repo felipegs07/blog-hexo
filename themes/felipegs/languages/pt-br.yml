@@ -1,0 +1,24 @@
+info:
+  job: Desenvolvedor Front-end
+
+menu:
+  about: sobre
+  blog: blog
+  portfolio: portfólio
+  dark_mode: modo escuro
+  photo_description: Foto do Felipe, um garoto barbudo num fundo de tecido escuro.
+
+footer:
+  text: Feito com S2 and
+
+index:
+  text: Eu sou Felipe, um desenvolvedor front-end viciado em javascript. Focado em obter conhecimento profundo de fundamentos/tecnologias e escrever sobre isso. 
+  know: me conheça
+  all_articles: ver todos os artigos
+  home: Início
+  last_articles: Últimos artigos
+  min_read: minutos de leitura
+
+about:
+  text: SOBRE
+
