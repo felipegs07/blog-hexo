@@ -1,19 +1,25 @@
 {% extends "default.njk" %}
 
+{% set filteredPosts = [] %}
+{% for post in site.posts.sort('date', -1).toArray() %}
+    {% if post.lang == page.lang %}
+        {{ filteredPosts.push(post) }}
+    {% endif %}
+{% endfor %}
+
 {% block maincontent %}
-    Eu sou <strong>Felipe G.S</strong>, um desenvolvedor <strong>Front-end</strong> em desenvolvimento. Apaixonado por criar <span>experiências</span> positivas e tornar a vida das pessoas mais <span>simples</span>.
+    {{__('index.text')}}
     <br />
     <strong>
         <a class="link" href="https://www.linkedin.com/in/felipegdasilva/" rel="noopener noreferrer" target="_blank">
-            me conheça.
+            {{__('index.know')}}
         </a>
     </strong>
 {% endblock %}
-
 {% block mainbody %}
     <section class="container">
-        <h3 class="title__page"><strong>Início</strong> | Últimas publicações</h3>
-        {% for post in site.posts.sort('date', -1).toArray() %}
+        <h3 class="title__page"><strong>{{__('index.home')}}</strong> | {{__('index.last_articles')}}</h3>
+        {% for post in filteredPosts %}
             {% if loop.index < 4 %}
                 <a href="{{ url_for(post.path) }}" aria-label="{{ post.title }}">
                     <article class="card card--full">
@@ -22,8 +28,8 @@
                                 {{ post.title }}
                             </h3>
                             <span class="card__post-info">
-                                postado em {{ date(post.date, 'll') }} | 
-                                {{ min2read(post.content) }} minutos de leitura
+                                {{ date(post.date, 'll') }} | 
+                                {{ min2read(post.content) }} {{__('index.min_read')}}
                             </span>
                         </section>
                     </article>
@@ -33,6 +39,6 @@
     </section>
 
     <section style="text-align: center; margin-top: 3rem;">
-        <a href="/blog" class="btn">ver todos os posts</a>
+        <a href="/blog" class="btn">{{__('index.all_articles')}}</a>
     </section>
 {% endblock %}

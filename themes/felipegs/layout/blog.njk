@@ -1,13 +1,21 @@
 {% extends "default.njk" %}
 
+{% set filteredPosts = [] %}
+{% for post in site.posts.sort('date', -1).toArray() %}
+    {% if post.lang == page.lang %}
+        {{ filteredPosts.push(post) }}
+    {% endif %}
+{% endfor %}
+
+
 {% block maincontent %}
     <section>BLOG.</section>
 {% endblock %}
 
 {% block mainbody %}
     <section class="container">
-        <h3 class="title__page"><strong>Blog</strong> | Todas as publicações</h3>
-        {% for post in site.posts.sort('date', -1).toArray() %}
+        <h3 class="title__page"><strong>Blog</strong> | {{__('blog.all_articles')}}</h3>
+        {% for post in filteredPosts %}
             <a href="{{ url_for(post.path) }}" aria-label="{{ post.title }}">
                 <article class="card card--full">
                     <section class="card__info">
@@ -15,8 +23,8 @@
                             {{ post.title }}
                         </h3>
                         <span class="card__post-info">
-                            postado em {{ date(post.date, 'll') }} | 
-                            {{ min2read(post.content) }} minutos de leitura
+                            {{__('post.published')}} {{ date(post.date, 'll') }} | 
+                            {{ min2read(post.content) }} {{__('post.min_read')}}
                         </span>
                     </section>
                 </article>

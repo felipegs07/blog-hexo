@@ -1,0 +1,33 @@
+info:
+  job: Front-end Developer
+
+menu:
+  about: about
+  blog: blog
+  portfolio: portfolio
+  dark_mode: dark mode
+  photo_description: A guy with beard in front of a dark background.
+  en_link: change the language to english
+  pt_br_link: change the language to brazilian portuguese
+
+footer:
+  text: Made with S2 and
+
+index:
+  text: I'm Felipe, a front-end developer, javascript addicted. Focused in get in-depth knowledge of fundamentals/technologies and write about it.
+  know: know me
+  all_articles: see all articles
+  home: Home
+  last_articles: Last articles
+  min_read: min read
+
+about:
+  text: ABOUT
+
+post:
+  article: ARTICLE.
+  min_read: min read
+  published: published on
+
+blog:
+  all_articles: All articles

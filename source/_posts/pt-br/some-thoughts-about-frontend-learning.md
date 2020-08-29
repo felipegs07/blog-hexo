@@ -1,6 +1,7 @@
 ---
 title: Alguns pensamentos sobre aprendizado de Front-end
 date: 2020-05-13 00:00:00
+lang: pt-br
 tags:
 ---
 
