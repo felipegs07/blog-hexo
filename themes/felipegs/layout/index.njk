@@ -1,5 +1,12 @@
 {% extends "default.njk" %}
 
+{% set filteredPosts = [] %}
+{% for post in site.posts.sort('date', -1).toArray() %}
+    {% if post.lang == page.lang %}
+        {{ filteredPosts.push(post) }}
+    {% endif %}
+{% endfor %}
+
 {% block maincontent %}
     {{__('index.text')}}
     <br />
@@ -9,11 +16,10 @@
         </a>
     </strong>
 {% endblock %}
-
 {% block mainbody %}
     <section class="container">
         <h3 class="title__page"><strong>{{__('index.home')}}</strong> | {{__('index.last_articles')}}</h3>
-        {% for post in site.posts.sort('date', -1).toArray() %}
+        {% for post in filteredPosts %}
             {% if loop.index < 4 %}
                 <a href="{{ url_for(post.path) }}" aria-label="{{ post.title }}">
                     <article class="card card--full">

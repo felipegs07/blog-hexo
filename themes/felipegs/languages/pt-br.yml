@@ -7,6 +7,8 @@ menu:
   portfolio: portfólio
   dark_mode: modo escuro
   photo_description: Foto do Felipe, um garoto barbudo num fundo de tecido escuro.
+  en_link: mudar o idioma para inglês
+  pt_br_link: mudar o odioma para português brasileiro
 
 footer:
   text: Feito com S2 and
@@ -21,4 +23,12 @@ index:
 
 about:
   text: SOBRE
+
+post:
+  article: ARTIGO.
+  min_read: minutos de leitura
+  published: publicado em
+
+blog:
+  all_articles: Todas as publicações
 

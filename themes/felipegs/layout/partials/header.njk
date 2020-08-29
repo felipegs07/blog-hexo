@@ -1,18 +1,21 @@
 <header class="menu">
     <section class="container">
-    <section class="menu__brand">
-        <a href="/" style="height: inherit">
-            <section class="menu__logo">
-                <img class="menu__logo-img" src="/img/photo.jpg" alt="{{__('menu.photo_description')}}" />
-                <span href="/" class="menu__logo-text bold">Felipe Gustavo</span>
-            </section>
-        </a>
-    </section>
-    <nav class="menu__nav">
-        <a class="menu__nav-item" href="/about">{{__('menu.about')}}</a>
-        <a class="menu__nav-item" href="/blog">{{__('menu.blog')}}</a>
-        <a class="menu__nav-item" href="https://github.com/felipegs07" rel="noopener noreferrer" target="_blank">{{__('menu.portfolio')}}</a>
-    </nav>
-    <button type="button" class="menu__dark-mode-btn">{{__('menu.dark_mode')}}</button>
+        <article class="menu__brand">
+            <a href="{{ url_for_lang('/') }}" style="height: inherit">
+                <section class="menu__logo">
+                    <img class="menu__logo-img" src="/img/photo.jpg" alt="{{__('menu.photo_description')}}" />
+                    <span href="/" class="menu__logo-text bold">Felipe Gustavo</span>
+                </section>
+            </a>
+        </article>
+        <article class="menu__langs">
+            <a href="javascript:window.location = '{{ switch_lang('en')}}'" aria-label="{{__('menu.en_link')}}">EN </a>|<a href="javascript:window.location = '{{ switch_lang('pt-br')}}'" aria-label="{{__('menu.pt_br_link')}}"> PT-BR</a>
+        </article>
+        <nav class="menu__nav">
+            <a class="menu__nav-item" href="{{ url_for_lang('/about') }}">{{__('menu.about')}}</a>
+            <a class="menu__nav-item" href="{{ url_for_lang('/blog') }}">{{__('menu.blog')}}</a>
+            <a class="menu__nav-item" href="https://github.com/felipegs07" rel="noopener noreferrer" target="_blank">{{__('menu.portfolio')}}</a>
+        </nav>
+        <button type="button" class="menu__dark-mode-btn">{{__('menu.dark_mode')}}</button>
     </section>
 </header>

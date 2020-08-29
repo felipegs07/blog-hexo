@@ -1,6 +1,7 @@
 ---
-title: "Entendendo BEMCSS"
+title: "Understanding BEMCSS"
 date: 2019-07-25 12:00:00
+lang: en
 icon: "fab fa-css3-alt"
 tags:
 - CSS3

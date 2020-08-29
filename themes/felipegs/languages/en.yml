@@ -7,6 +7,8 @@ menu:
   portfolio: portfolio
   dark_mode: dark mode
   photo_description: A guy with beard in front of a dark background.
+  en_link: change the language to english
+  pt_br_link: change the language to brazilian portuguese
 
 footer:
   text: Made with S2 and
@@ -22,3 +24,10 @@ index:
 about:
   text: ABOUT
 
+post:
+  article: ARTICLE.
+  min_read: min read
+  published: published on
+
+blog:
+  all_articles: All articles
