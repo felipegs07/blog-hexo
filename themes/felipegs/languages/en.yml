@@ -28,6 +28,8 @@ post:
   article: ARTICLE.
   min_read: min read
   published: published on
+  discuss: do you want to comment?
+  discuss_twitter: discuss on twitter
 
 blog:
   all_articles: All articles

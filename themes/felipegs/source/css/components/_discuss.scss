@@ -1,0 +1,17 @@
+.discuss {
+  margin-top: 10rem;
+  font-family: 'ttcommons-bold', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+
+  &__text {
+    display: inline;
+    margin: 0 .2rem
+  }
+
+  & > a {
+    display: inline;
+    margin: 0 .2rem;
+    color: $primary;
+  }
+}

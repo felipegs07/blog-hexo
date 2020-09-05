@@ -9,7 +9,7 @@
             </a>
         </article>
         <article class="menu__langs">
-            <a href="javascript:window.location = '{{ switch_lang('en')}}'" aria-label="{{__('menu.en_link')}}">EN </a>|<a href="javascript:window.location = '{{ switch_lang('pt-br')}}'" aria-label="{{__('menu.pt_br_link')}}"> PT-BR</a>
+            <a href="javascript:window.location = '{{ switch_lang('en')}}'" aria-label="{{__('menu.en_link')}}" title="{{__('menu.en_link')}}">EN </a>|<a href="javascript:window.location = '{{ switch_lang('pt-br')}}'" aria-label="{{__('menu.pt_br_link')}}" title="{{__('menu.pt_br_link')}}"> PT-BR</a>
         </article>
         <nav class="menu__nav">
             <a class="menu__nav-item" href="{{ url_for_lang('/about') }}">{{__('menu.about')}}</a>
