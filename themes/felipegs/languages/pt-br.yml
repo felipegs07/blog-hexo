@@ -8,7 +8,7 @@ menu:
   dark_mode: modo escuro
   photo_description: Foto do Felipe, um garoto barbudo num fundo de tecido escuro.
   en_link: mudar o idioma para inglês
-  pt_br_link: mudar o odioma para português brasileiro
+  pt_br_link: mudar o idioma para português brasileiro
 
 footer:
   text: Feito com S2 and
@@ -28,6 +28,8 @@ post:
   article: ARTIGO.
   min_read: minutos de leitura
   published: publicado em
+  discuss: você quer comentar?
+  discuss_twitter: comente no twitter
 
 blog:
   all_articles: Todas as publicações
