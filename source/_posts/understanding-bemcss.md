@@ -9,9 +9,9 @@ tags:
 - Architecture
 ---
 
-Quando a utilização de CSS deixa de ser apenas a estilização de sites pessoais ou projetos pequenos e passa para projetos grandes, escaláveis e complexos, cria-se a necessidade de organizar e pensar sobre a arquitetura para o CSS. Coisas simples como a nomeação das classes pode se tornar um gigantesco problema na manutenção futura.
+When the use of CSS is no longer just the stylization of personal websites or small projects and moves to large, scalable and complex projects, there is a need to organize and think about the architecture for the CSS. Simple things like class naming can become a huge problem in future maintenance.
 
-Para corrigir problemas como esses, foram criados arquiteturas de organização e metodologias e uma das mais populares é o BEMCSS.
+To correct problems like these, organizational architectures and methodologies were created and one of the most popular is BEMCSS.
 #### Sumário:
 [O que é?](#O-que-é)  
 [Block](#Block)  
@@ -23,25 +23,24 @@ Para corrigir problemas como esses, foram criados arquiteturas de organização 
 
 ## O que é?
 
-A sigla vem de Block-Element-Modifier, que é a forma designada para criar nomes para as classes. A idéia é criar um padrão rígido para a nomeação das classes, fazendo com que fique fácil de ler e entender o que a classe faz e a qual componente ela se dirige.
-Os nomes das classes seguem a linha:
+The acronym comes from Block-Element-Modifier, which is the way designated to create names for the classes. The idea is to create a rigid standard for class naming, making it easy to read and understand what the class does and what component it targets.
+The class names follow the line:
 
 ```css
-.bloco__elemento--modificador {}
+.block__element--modifier {}
 ```
 
-
-Sendo 2 underlines que  separam o bloco do elemento e dois traços que separam o elemento do modificador.
+Two underlines that separate the block from the element and two lines that separate the element from the modifier.
 
 ## Block:
-O Block é o elemento ou componente que aquela classe é designada. Não precisa respeitar o nome do elemento, a ideia é que ela descreva o que o componente é no escopo do projeto. Por exemplo, se você criar uma classe para um formulário de login, o nome não seria .form, mesmo que no HTML você crie de fato um formulário. 
+The Block is the element or component that that class is assigned to. You don't need to respect the name of the element, the idea is that it describes what the component is in the scope of the project. For example, if you create a class for a login form, the name would not be .form, even though in HTML you do create a form.
 
-No escopo do projeto a classe poderia ser **.login**, o que deixaria bem claro para todos do que se trata. Uma regra geral de nomeação é separar os nomes compostos com um traço simples, por exemplo,  **.formulario-de-cadastro** seria a forma correta de escrever um nome com três palavras
+In the scope of the project the class could be **. Login **, which would make it clear to everyone what it is about. A general naming rule is to separate compound names with a single dash, for example, **. Formulario-de-cadastr ** would be the correct way to write a name with three words
 
 ## Element:
-O Element são partes internas do componente. No exemplo usado acima, dentro do bloco login haveria pelo menos dois inputs para o username ou email, senha e um botão de ação.  
+The Element are internal parts of the component. In the example used above, inside the login block there would be at least two inputs for the username or email, password and an action button.
 
-A nomeação desses elementos seria:
+The appointment of these elements would be:
 
 ```css
 .login__email {}
@@ -50,28 +49,28 @@ A nomeação desses elementos seria:
 ```
 
 ## Modifier:
-O modificador normalmente se aplica a alterações e formas variadas pros elementos ou pro próprio bloco como um todo. No exemplo do artigo, quando o usuário colocasse algo que não corresponde a senha ou e-mail nos inputs e houvesse uma verificação para confirmar isso, o feedback visual do erro, por exemplo, poderia ser feito mudando as cores das bordas dos inputs incorretos para vermelho.  
+The modifier usually applies to changes and varied shapes for the elements or for the block itself as a whole. In the example of the article, when the user put something that does not match the password or email in the inputs and there was a check to confirm this, the visual feedback of the error, for example, could be done by changing the colors of the edges of the incorrect inputs to red.
 
-A classe modificadora seria utilizada para criar isso, sendo usada dessa forma:
+The modifier class would be used to create this, being used in this way:
 
 ```css
 .login__email--error {}
 ```
 
 
-Os modificadores podem ser usados também para o bloco como um todo, podendo ser aplicado diretamente sobre ele na classe, ignorando a existência dos elementos. Por exemplo:
+The modifiers can also be used for the block as a whole, and can be applied directly over it in the class, ignoring the existence of the elements. For example:
 
 ```css
 .login--error {}
 ```
 
-Lembrando que cada elemento tem sua classe de maneira isolada. Por exemplo, se um elemento tem outro elemento dentro dele, não é correto unir os elementos numa única classe, como:
+Remembering that each element has its class in an isolated way. For example, if an element has another element within it, it is not correct to join the elements into a single class, such as:
 
 ```css
 .bloco__elemento1__elemento2__elemento3 {}
 ```
 
-Nesses casos cada elemento tem sua classe própria, ignorando a ordem da estrutura HTML
+In these cases each element has its own class, ignoring the order of the HTML structure
 
 ```css
 .bloco {}
@@ -80,16 +79,16 @@ Nesses casos cada elemento tem sua classe própria, ignorando a ordem da estrutu
 .bloco__elemento3 {}
 ```
 
-## Uma nova forma de pensar CSS:
+## A new way of thinking CSS:
 
-Ao utilizar uma metodologia como o BEM, é interessante pensar que você não está apenas nomeando classes de uma forma padrão. É importante repensar a forma de criar os elementos, pensando no layout de uma forma modular, separando cada pedaço em componentes, que seriam correspondentes aos blocos, elementos e assim por diante.
+When using a methodology like BEM, it is interesting to think that you are not just naming classes in a standard way. It is important to rethink how to create the elements, thinking about the layout in a modular way, separating each piece into components, which would correspond to the blocks, elements and so on.
 
-Separando o layout dessa forma, a própria criação do código se torna mais organizada. Utilizar o BEM é apenas a forma de formalizar essa nova estruturação.
-É importante salientar que o BEM é uma metodologia altamente flexível, se adaptando e encaixando em várias arquiteturas de projeto CSS diferentes, outro ponto bem positivo
+Separating the layout in this way, the creation of the code itself becomes more organized. Using BEM is just the way to formalize this new structure.
+It is important to note that BEM is a highly flexible methodology, adapting and fitting in several different CSS project architectures, another very positive point
 
-## Conclusão:
+## Conclusion:
 
-A metodologia é simples, porém muito funcional e útil no dia a dia de desenvolvimento, além de ser algo bastante pedido em vagas de emprego no mercado atual. Criar um CSS escalável e de qualidade evita retrabalho e aumenta a qualidade de um software, por isso, é uma habilidade cada vez mais requisitada em projetos de alto nível.  
+The methodology is simple, but very functional and useful in the day-to-day development, in addition to being something that is often requested in job openings in the current market. Creating a scalable and quality CSS avoids rework and increases the quality of a software, therefore, it is an increasingly required skill in high-level projects.
 
-### Fontes: 
+### Research source: 
  - [getbem](http://getbem.com/)

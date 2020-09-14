@@ -3,13 +3,11 @@ layout: about
 title: About
 ---
 
-I am a front-end developer focused on developing myself in creating web softwares of high quality and websites.
+I’m a frontend developer, work with software aimed at ecommerce and education, using web technologies as HTML5, CSS3 and SASS, JavaScript, React.js, Redux, Jest and Enzyme, Single-SPA, Bootstrap/Materialize and tools as Gulp.js, Webpack, Git/GitHub and Firebase.
 
-I worked with ecommerce softwares, using front-end technologies like HTML5, CSS3 and SASS, JavaScript, React.js, Bootstrap/Materialize and tools like Gulp.js, Git/GitHub and Firebase.
+Always focused in building responsive user interfaces with faithful reproduction of design, working with the UX team to optimize the software’s usability and functionality.
 
-Besides working with the creation of responsive interfaces focused on faithful reproduction of design (Pixel Perfect), and to use UX concepts to optimize the ecommerce performance, breaking frustrations, decreasing the dropout rate and then increasing the conversion rate.
-
-I have interest for working with software development and for build solutions that bring positive experiences and make the life easier for everyone.
+At the moment, I’m focused in get in-depth knowledge about libraries and frameworks architecture, in micro-frontends and to build software with quality and performance.
 
 - [**Linkedin**](https://www.linkedin.com/in/felipegdasilva/)
 - [**Email**](mailto:felipegdas07@gmail.com)
@@ -20,7 +18,7 @@ I have interest for working with software development and for build solutions th
 - **Fundamentals:** HTML5, CSS3, JavaScript ES6+++.
 - **CSS Related:** SASS/SCSS, Styled Components, Bootstrap, Materialize.
 - **JavaScript Related:** React, Redux, Next.js, Single-SPA (Microfront-end Framework).
-- **Unit testing/Integratio testing:** Jest, Enzyme, Mocha, Chai.js.
+- **Testing:** Jest, Enzyme.
 - **Template Engines:** Nunjucks, Liquid, Markdown.
 - **Methodologies:** UI Design, Responsive Design, Scrum.
 - **Tools:** Webpack, Gulp.js, npm, git, GitHub.
