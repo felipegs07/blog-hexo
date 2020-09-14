@@ -3,12 +3,12 @@ layout: about
 title: Sobre
 ---
 
-Eu sou um desenvolvedor front-end focado em me desenvolver na criação de softwares web de alta qualidade e sites.
-Trabalhei com softwares voltados ao ecommerce, utilizando tecnologias front-end como HTML5, CSS3 e SASS, JavaScript, React.js, Bootstrap/Materialize e ferramentas como Gulp.js, Git/GitHub e Firebase.
+Sou um desenvolvedor front-end, trabalho com softwares voltados ao ecommerce e educação, utilizando tecnologias web como HTML5, CSS3 e SASS, JavaScript, React.js, Redux, Jest e Enzyme, Single-SPA, Bootstrap/Materialize e ferramentas como Gulp.js, Webpack, Git/GitHub e Firebase.
 
-Além de trabalhar com criações de Interfaces Responsivas com foco em reproduzir com fidelidade o design (pixel perfect) e utilizar conceitos de UX para otimizar a performance do ecommerce, quebrando frustrações, diminuindo a taxa de abandono e posteriormente aumentando a conversão dos clientes.
+Sempre focado em criar interfaces responsivas com fidelidade ao design, trabalhando junto ao UX para otimizar a usabilidade e funcionamento dos softwares.
 
-Me interesso por trabalhar com desenvolvimento de software e por construir soluções que trazem experiências positivas e facilitem a vida das pessoas.
+No momento, estou focado em aprofundar meus conhecimentos em arquitetura de bibliotecas e frameworks, em micro-frontends e em construir software com qualidade e performance.  
+
 
 - [**Linkedin**](https://www.linkedin.com/in/felipegdasilva/)
 - [**Email**](mailto:felipegdas07@gmail.com)
@@ -19,9 +19,9 @@ Me interesso por trabalhar com desenvolvimento de software e por construir solu�
 - **Base:** HTML5, CSS3, JavaScript ES6+++.
 - **CSS Related:** SASS/SCSS, Styled Components, Bootstrap, Materialize.
 - **Libs JavaScript:** React, Redux, Next.js, Single-SPA (Microfront-end Framework).
-- **Testes Unitários/Integração:** Jest, Enzyme, Mocha, Chai.js.
+- **Testes:** Jest, Enzyme.
 - **Templates Engines:** Nunjucks, Liquid, Markdown.
-- **Práticas de Desenvolvimento:** UI Design, Responsive Design, Scrum.
+- **Práticas de Desenvolvimento:** UI Design, Design Responsivo, Scrum.
 - **Ferramentas:** Webpack, Gulp.js, npm, git, GitHub.
 - **Geradores de Site Estático:** Jekyll, Hexo, Gatsby.
 - **Outros:** OpenCart, Firebase.
