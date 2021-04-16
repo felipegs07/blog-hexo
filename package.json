@@ -28,6 +28,6 @@
     "hexo-renderer-scss": "^1.2.0",
     "hexo-server": "^0.3.3",
     "hexo-wordcount": "^6.0.1",
-    "npm": "^6.9.0"
+    "npm": "^6.14.6"
   }
 }
